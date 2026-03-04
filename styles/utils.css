@@ -1,9 +1,17 @@
-.padding-box-large {
-  padding: 0 50px;
+:root {
+  --black: #000;
+  --gray: #7e7e7e;
+  --white: #fff;
 }
 
-.padding-box-small {
-  padding: 0 24px;
+.padding-box_large {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.padding-box_small {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .mb-180 {
@@ -12,4 +20,14 @@
 
 .mb-155 {
   margin-bottom: 155px;
+}
+
+.link-animated {
+  transition: all 0.3s ease;
+}
+
+.link-animated:hover,
+.link-animated:active,
+.link-animated:visited {
+  color: var(--gray);
 }
