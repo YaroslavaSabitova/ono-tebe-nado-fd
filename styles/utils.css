@@ -14,12 +14,24 @@
   padding-left: 24px;
 }
 
+.padding-left_40 {
+  padding-left: 40px;
+}
+
 .margin-bottom_180 {
   margin-bottom: 180px;
 }
 
 .margin-bottom_155 {
   margin-bottom: 155px;
+}
+
+.margin-bottom_27 {
+  margin-bottom: 27px;
+}
+
+.margin-bottom_30 {
+  margin-bottom: 30px;
 }
 
 .flex-center {
@@ -40,7 +52,6 @@
 }
 
 .link-animated:hover,
-.link-animated:active,
-.link-animated:visited {
+.link-animated:active {
   color: var(--gray);
 }
