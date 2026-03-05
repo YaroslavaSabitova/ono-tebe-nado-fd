@@ -89,7 +89,7 @@ body {
   padding-top: 165px;
   padding-bottom: 50px;
   color: var(--light);
-  background: url('/images/cover.jpg') 50% 50% / cover no-repeat;
+  background: url('../images/cover.jpg') 50% 50% / cover no-repeat;
 }
 
 .overlay {
@@ -196,15 +196,15 @@ body {
 }
 
 .card_type_film {
-  background-image: url('/images/card-lot-01.jpg');
+  background-image: url('../images/card-lot-01.jpg');
 }
 
 .card_type_book {
-  background-image: url('/images/card-lot-02.jpg');
+  background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-  background-image: url('/images/card-lot-03.jpg');
+  background-image: url('../images/card-lot-03.jpg');
 }
 
 .card__title {
