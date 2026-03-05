@@ -1,27 +1,40 @@
 :root {
-  --black: #000;
+  --dark: #000;
   --gray: #7e7e7e;
-  --white: #fff;
+  --light: #fff;
 }
 
-.padding-box_large {
-  padding-left: 50px;
+.padding-box_50 {
   padding-right: 50px;
+  padding-left: 50px;
 }
 
-.padding-box_small {
-  padding-left: 24px;
+.padding-box_24 {
   padding-right: 24px;
+  padding-left: 24px;
 }
 
-.mb-180 {
+.margin-bottom_180 {
   margin-bottom: 180px;
 }
 
-.mb-155 {
+.margin-bottom_155 {
   margin-bottom: 155px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-animated:hover,
+.button-animated:active,
+.button-animated:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button-animated,
 .link-animated {
   transition: all 0.3s ease;
 }

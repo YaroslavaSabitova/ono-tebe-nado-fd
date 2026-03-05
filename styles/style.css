@@ -5,7 +5,7 @@ body {
 
   padding-bottom: 500px;
   outline: 1px solid red;
-  color: var(--black);
+  color: var(--dark);
 
   font-size: 18px;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .header__link {
-  color: var(--black);
+  color: var(--dark);
   font-weight: 400;
   font-size: 18px;
   text-decoration: underline;
@@ -45,11 +45,11 @@ body {
   width: 148px;
 }
 
-a.header__logo-link {
+.header__logo-link {
   display: block;
 }
 
-img.header__logo-image {
+.header__logo-image {
   max-height: 105px;
 }
 
@@ -82,7 +82,83 @@ img.header__logo-image {
 }
 
 .cover {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 757px;
+  padding-top: 165px;
+  padding-bottom: 50px;
+  color: var(--light);
   background: url('/images/cover.jpg') 50% 50% / cover no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.6;
+  background: var(--dark);
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_left {
+  text-align: left;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing {
+  letter-spacing: 20%;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30%;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 127%;
+  text-transform: uppercase;
+  word-spacing: 21px;
+}
+
+.bet-button {
+  border: 1px solid var(--light);
+  padding: 12px 32px;
+  color: var(--light);
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
 }
 
 .footer {
