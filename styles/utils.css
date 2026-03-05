@@ -18,6 +18,10 @@
   padding-left: 40px;
 }
 
+.margin-bottom_100 {
+  margin-bottom: 100px;
+}
+
 .margin-bottom_180 {
   margin-bottom: 180px;
 }
@@ -47,11 +51,16 @@
 }
 
 .button-animated,
-.link-animated {
+.link-animated,
+.card-animated {
   transition: all 0.3s ease;
 }
 
 .link-animated:hover,
 .link-animated:active {
   color: var(--gray);
+}
+
+.card-animated:hover {
+  transform: translateY(-7px);
 }
