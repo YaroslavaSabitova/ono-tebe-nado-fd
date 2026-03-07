@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header class="header padding-box_50">
+    <header class="header">
       <nav class="header__menu">
         <ul class="header__links-list">
           <li
@@ -38,7 +38,7 @@
         </ul>
       </nav>
 
-      <a href="#0" target="_blank" class="header__logo-link">
+      <a target="_blank" class="header__logo-link">
         <img
           class="logo header__logo-image"
           src="./images/logo-black.svg"
@@ -46,48 +46,43 @@
       </a>
 
       <address class="address header__address">
-        <ul class="address__list">
-          <li class="address__item">
-            <a
-              href="tel:+99995555555"
-              class="address__link link-animated link-underlined"
-              >+9&#160;999&#160;555&#160;5555</a
-            >
-          </li>
-          <li class="address__item">
-            <a
-              href="mailto:info@sobaka.ge"
-              class="address__link link-animated link-underlined"
-              >info@sobaka.ge</a
-            >
-          </li>
-          <li class="address__item">
-            наб.&#160;Принсенграхт 263-265, Амстердам
-          </li>
-        </ul>
+        <a
+          href="tel:+99995555555"
+          class="address__item link-animated link-underlined"
+          >+9&#160;999&#160;555&#160;5555</a
+        >
+        <a
+          href="mailto:info@sobaka.ge"
+          class="address__item link-animated link-underlined"
+          >info@sobaka.ge</a
+        >
+        <p class="address__item">
+          наб.&#160;Принсенграхт 263-265, Амстердам
+        </p>
       </address>
     </header>
 
     <main class="content">
-      <section class="cover padding-box_50 margin-bottom_180">
+      <section class="cover">
         <h1 class="cover__title">
-          <span
-            class="aligned-text aligned-text_left letter-spacing-extended"
-            >оно</span
-          >
-          <span
-            class="aligned-text aligned-text_center letter-spacing-extended"
-            >тебе</span
-          >
-          <span class="aligned-text aligned-text_right letter-spacing"
-            >надо</span
-          >
+          <span class="aligned-text aligned-text_left"
+            ><span class="letter-spacing-extended">он</span
+            ><span class="no-letter-spacing">о</span>
+          </span>
+          <span class="aligned-text aligned-text_center"
+            ><span class="letter-spacing-extended">теб</span
+            ><span class="no-letter-spacing">е</span>
+          </span>
+          <span class="aligned-text aligned-text_right"
+            ><span class="letter-spacing-extended">над</span
+            ><span class="no-letter-spacing">о</span>
+          </span>
         </h1>
 
         <div class="cover__description">
-          <h2 class="cover__description-text">
+          <p class="cover__description-text">
             Аукцион вещей, в&#160;которые никто не&#160;верил
-          </h2>
+          </p>
           <button class="bet-button button-animated flex-center">
             Сделать&#160;ставку
           </button>
@@ -96,10 +91,10 @@
         <div class="overlay"></div>
       </section>
 
-      <section class="lots padding-box_24 margin-bottom_155">
-        <h2 class="heading padding-left_40 margin-bottom_27">лоты</h2>
+      <section class="lots">
+        <h2 class="heading lots__heading">лоты</h2>
 
-        <ul class="lots__card-list margin-bottom_30">
+        <ul class="lots__card-list">
           <li class="lots__card-list-item card-animated">
             <a href="#0" target="_blank" class="card-link">
               <article class="card card_type_film">
@@ -152,7 +147,7 @@
                   и&#160;вовсе что-то похожее на&#160;инфузорию-туфельку.
                   Никаких полей, лесов, котиков... Сколько бы
                   вы&#160;на&#160;такое поставили, если&#160;бы
-                  не&#160;знали, что это&#160;&#8212; одна&#160;из
+                  не&#160;знали, что&#160;это &#8212; одна&#160;из
                   революционных работ Кандинского?
                 </p>
 
@@ -164,12 +159,12 @@
         <a
           href="#0"
           target="_blank"
-          class="lots__look-more-link link-animated link-underlined padding-left_40"
+          class="lots__look-more-link link-animated link-underlined"
           >посмотреть&#160;больше</a
         >
       </section>
 
-      <section class="about padding-box_24 margin-bottom_180">
+      <section class="about">
         <div class="about__column about__column_left">
           <div class="about__logo flex-center">
             <img
@@ -179,8 +174,8 @@
           </div>
         </div>
 
-        <div class="about__column about__column_right">
-          <h2 class="heading margin-bottom_100">Об&#160;аукционе</h2>
+        <article class="about__column about__column_right">
+          <h2 class="heading about__heading">Об&#160;аукционе</h2>
 
           <div class="text about__text">
             <p>
@@ -202,31 +197,25 @@
               стали культовыми.
             </p>
           </div>
-        </div>
+        </article>
       </section>
     </main>
 
-    <footer class="footer padding-box_50">
+    <footer class="footer">
       <address class="address footer__address">
-        <ul class="address__list">
-          <li class="address__item">
-            <a
-              href="tel:+99995555555"
-              class="address__link link-animated link-underlined"
-              >+9&#160;999&#160;555&#160;5555</a
-            >
-          </li>
-          <li class="address__item">
-            <a
-              href="mailto:info@sobaka.ge"
-              class="address__link link-animated link-underlined"
-              >info@sobaka.ge</a
-            >
-          </li>
-          <li class="address__item">
-            наб.&#160;Принсенграхт 263-265, Амстердам
-          </li>
-        </ul>
+        <a
+          href="tel:+99995555555"
+          class="address__item link-animated link-underlined"
+          >+9&#160;999&#160;555&#160;5555</a
+        >
+        <a
+          href="mailto:info@sobaka.ge"
+          class="address__item link-animated link-underlined"
+          >info@sobaka.ge</a
+        >
+        <p class="address__item">
+          наб.&#160;Принсенграхт 263-265, Амстердам
+        </p>
       </address>
 
       <nav class="footer__menu">

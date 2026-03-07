@@ -10,8 +10,7 @@ body {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding-top: 92px;
-  padding-bottom: 92px;
+  padding: 92px 50px;
 }
 
 .header__links-list {
@@ -53,13 +52,10 @@ body {
 }
 
 .address {
-  font-style: normal;
-}
-
-.address__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-style: normal;
   list-style-type: none;
 }
 
@@ -86,10 +82,13 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 757px;
-  padding-top: 165px;
-  padding-bottom: 50px;
+  margin-bottom: 180px;
+  padding: 165px 50px 50px;
   color: var(--light);
-  background: url('../images/cover.jpg') 50% 50% / cover no-repeat;
+  background-image: url('../images/cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay {
@@ -126,12 +125,12 @@ body {
   text-align: right;
 }
 
-.letter-spacing {
-  letter-spacing: 20%;
+.letter-spacing-extended {
+  letter-spacing: 0.3em;
 }
 
-.letter-spacing-extended {
-  letter-spacing: 30%;
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
@@ -145,7 +144,7 @@ body {
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
-  word-spacing: 21px;
+  word-spacing: 19px;
 }
 
 .bet-button {
@@ -166,18 +165,33 @@ body {
   text-transform: uppercase;
 }
 
+.lots {
+  margin-bottom: 155px;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  padding-left: 40px;
+}
+
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
   gap: 25px;
+  margin-bottom: 30px;
   list-style-type: none;
 }
 
 .lots__card-list-item {
   width: 31.75%;
   min-height: 596px;
+}
+
+.card-link {
+  text-decoration: none;
 }
 
 .card {
@@ -223,6 +237,7 @@ body {
 }
 
 .lots__look-more-link {
+  margin-left: 40px;
   color: var(--dark);
   font-weight: 400;
   font-size: 20px;
@@ -232,10 +247,8 @@ body {
   display: grid;
   grid-template-columns: 31.75% 1fr;
   gap: 25px;
-}
-
-.about__column_right {
-  padding-top: 98px;
+  margin-bottom: 180px;
+  padding: 0 24px;
 }
 
 .about__logo {
@@ -244,6 +257,14 @@ body {
   border-radius: 100%;
   background-color: var(--dark);
   aspect-ratio: 1/1;
+}
+
+.about__column_right {
+  padding-top: 98px;
+}
+
+.about__heading {
+  margin-bottom: 100px;
 }
 
 .about__text {
@@ -255,7 +276,7 @@ body {
 .footer {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  padding-bottom: 82px;
+  padding: 0 50px 82px;
 }
 
 .footer__address {
